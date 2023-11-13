@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Lista de Choferes</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de Choferes</h1>
+    </header>
+
+    <main>
+        <div class="botones">
+            <button id="mostrar">Mostrar Lista</button>
+            <button id="agregar">Agregar Chofer</button>
+            <button id="filtrar1">Buscar por Vehículo</button>
+            <button id="filtrar2">Buscar por Valor Hora</button>
+        </div>
+
+        <ul id="lista-choferes" class="lista-choferes"></ul>
+        
+        <div id="fechaHoraContainer" class="fecha-hora-container">
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* estilo para la pagina en general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+}
+
+header {
+    background-color: #3498db;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px;
+    cursor: pointer;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para la lista de choferes */
+.lista-choferes {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Estilos para el contenedor de fecha y hora */
+.fecha-hora-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .botones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .lista-choferes {
+        width: 100%;
+    }
+}
